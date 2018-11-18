@@ -1,0 +1,14 @@
+:root
+{
+	--couleur1:rgba(255,255,255,1);
+	--couleur2:rgba(216, 206, 158,1);
+	--couleur3:rgba(14, 190, 255,1);
+	--couleur0:rgba(72,72,72,1);
+	--couleur0_light:rgba(72,72,72,0.3);
+	--couleurPos:rgba(0, 206, 137,1);
+	--couleurNeg:rgba(206,0,96,1);
+	--couleurOrange:rgba(255,150,0,1);
+	--couleurBleu:rgba(26,117,242,1);
+	--couleurFushia:rgba(242,26,127,1);
+	--fontExo2:font-family: 'Exo 2 Semi Bold Condensed';
+}

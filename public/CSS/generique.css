@@ -1,0 +1,345 @@
+.alignCenter
+{
+	text-align: center;
+}
+.alignLeft
+{
+	text-align: left;
+}
+.alignRight
+{
+	text-align: right;
+}
+
+
+/*
+db   d8b   db d888888b d8888b. d888888b db   db 
+88   I8I   88   `88'   88  `8D `~~88~~' 88   88 
+88   I8I   88    88    88   88    88    88ooo88 
+Y8   I8I   88    88    88   88    88    88~~~88 
+`8b d8'8b d8'   .88.   88  .8D    88    88   88 
+ `8b8' `8d8'  Y888888P Y8888D'    YP    YP   YP 
+ */
+
+.width5
+{
+	width: 5%;
+}
+.width10
+{
+	width: 10%;
+}
+.width15
+{
+	width: 15%;
+}
+.width20
+{
+	width: 20%;
+}
+.width25
+{
+	width: 25%;
+}
+.width30
+{
+	width: 30%;
+}
+.width35
+{
+	width: 35%;
+}
+.width40
+{
+	width: 40%;
+}
+.width45
+{
+	width: 45%;
+}
+.width50
+{
+	width: 50%;
+}
+.width55
+{
+	width: 55%;
+}
+.width60
+{
+	width: 60%;
+}
+.width65
+{
+	width: 65%;
+}
+.width70
+{
+	width: 70%;
+}
+.width75
+{
+	width: 75%;
+}
+.width80
+{
+	width: 80%;
+}
+.width85
+{
+	width: 85%;
+}
+.width90
+{
+	width: 90%;
+}
+.width95
+{
+	width: 95%;
+}
+.width100
+{
+	width: 100%;
+}
+.height100vh
+{
+	height: 100vh;
+}
+.height100
+{
+	height: 100%;
+}
+
+.height40px {
+	height: 40px;
+}
+/*
+d88888b  .d88b.  d8b   db d888888b 
+88'     .8P  Y8. 888o  88 `~~88~~' 
+88ooo   88    88 88V8o 88    88    
+88~~~   88    88 88 V8o88    88    
+88      `8b  d8' 88  V888    88    
+YP       `Y88P'  VP   V8P    YP    
+*/
+/*Petite Résolution*/
+@media all and (max-width: 1024px)
+{
+	.font1
+	{
+		font-size: 1em;
+	}
+	.font1_5
+	{
+		font-size: 1.5em;
+	}
+	.font1_6
+	{
+		font-size: 1.6em;
+	}
+	.font1_7
+	{
+		font-size: 1.7em;
+	}
+	.font2
+	{
+		font-size: 2em;
+	}
+	.font2_5
+	{
+		font-size: 2.5em;
+	}
+	.font3
+	{
+		font-size: 2em;
+	}
+	.font3_5
+	{
+		font-size: 2.5em;
+	}
+	.font4
+	{
+		font-size: 3em;
+	}
+	.font4_5
+	{
+		font-size: 3.5em;
+	}
+}
+/*Grande Résolution*/
+@media all and (min-width: 1025px)
+{
+	.font1
+	{
+		font-size: 1em;
+	}
+	.font1_5
+	{
+		font-size: 1.5em;
+	}
+	.font1_6
+	{
+		font-size: 1.6em;
+	}
+	.font1_7
+	{
+		font-size: 1.7em;
+	}
+	.font2
+	{
+		font-size: 2em;
+	}
+	.font2_5
+	{
+		font-size: 2.5em;
+	}
+	.font3
+	{
+		font-size: 3em;
+	}
+	.font3_5
+	{
+		font-size: 3.5em;
+	}
+	.font4
+	{
+		font-size: 4em;
+	}
+	.font4_5
+	{
+		font-size: 4.5em;
+	}
+}
+
+
+/*
+d8888b. d888888b .d8888. d8888b. db       .d8b.  db    db 
+88  `8D   `88'   88'  YP 88  `8D 88      d8' `8b `8b  d8' 
+88   88    88    `8bo.   88oodD' 88      88ooo88  `8bd8'  
+88   88    88      `Y8b. 88~~~   88      88~~~88    88    
+88  .8D   .88.   db   8D 88      88booo. 88   88    88    
+Y8888D' Y888888P `8888Y' 88      Y88888P YP   YP    YP    
+*/
+.DR {
+	display: flex;
+	flex-direction: row;
+}
+.DC {
+	display: flex;
+	flex-direction: column;
+}
+.JC {
+	justify-content: center;
+}
+.JSA {
+	justify-content: space-around;
+}
+.JSB {
+	justify-content: space-between;
+}
+.JFA {
+	justify-content: flex-start;
+}
+.JFE {
+	justify-content: flex-end;
+}
+.AIC {
+	align-items: center;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+h1 {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/*
+███╗   ███╗ █████╗ ██████╗  ██████╗ ██╗███╗   ██╗        ██╗    ██████╗  █████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗ 
+████╗ ████║██╔══██╗██╔══██╗██╔════╝ ██║████╗  ██║       ██╔╝    ██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║████╗  ██║██╔════╝ 
+██╔████╔██║███████║██████╔╝██║  ███╗██║██╔██╗ ██║      ██╔╝     ██████╔╝███████║██║  ██║██║  ██║██║██╔██╗ ██║██║  ███╗
+██║╚██╔╝██║██╔══██║██╔══██╗██║   ██║██║██║╚██╗██║     ██╔╝      ██╔═══╝ ██╔══██║██║  ██║██║  ██║██║██║╚██╗██║██║   ██║
+██║ ╚═╝ ██║██║  ██║██║  ██║╚██████╔╝██║██║ ╚████║    ██╔╝       ██║     ██║  ██║██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝    ╚═╝        ╚═╝     ╚═╝  ╚═╝╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                                                                                                      
+*/
+.marginAuto {
+	margin: auto;
+}
+.marginB1 {
+	margin-bottom: 1%;
+}
+.marginB2 {
+	margin-bottom: 2%;
+}
+.marginT1 {
+	margin-top: 1%;
+}
+.marginT2 {
+	margin-top: 2%;
+}
+@media (max-width: 767px)
+{
+	.marginB2_xs {margin: 0 0 2% 0;}
+}
+@media (min-width: 768px) AND (max-width: 991px)
+{
+	.marginB2_sm {margin: 0 0 2% 0;}
+}
+@media (min-width: 992px) AND (max-width: 1199px)
+{
+	.marginB2_md {margin: 0 0 2% 0;}
+}
+@media (min-width: 1200px)
+{
+	.marginB2_lg {margin: 0 0 2% 0;}
+}
+
+
+.paddingB1 {
+	padding-bottom: 1%;
+}
+.paddingB2 {
+	padding-bottom: 2%;
+}
+.paddingT1 {
+	padding-top: 1%;
+}
+.paddingT2 {
+	padding-top: 2%;
+}
+.paddingL3 {
+	padding-left: 3%;
+}
+/*
+██████╗ ███████╗██╗   ██╗██████╗ 
+██╔══██╗██╔════╝██║   ██║██╔══██╗
+██║  ██║█████╗  ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚██╗ ██╔╝██╔═══╝ 
+██████╔╝███████╗ ╚████╔╝ ██║     
+╚═════╝ ╚══════╝  ╚═══╝  ╚═╝     
+                                 
+*/
+
+/*
+.dev1 {	border: 1px solid blue; }
+.dev2 {	border: 1px solid red; }
+.dev3 {	border: 1px solid green; }
+.dev4 {	border: 1px solid orangered; }
+.dev5 {	border: 1px solid turquoise; }
+.dev6 {	border: 1px solid purple; }
+.dev7 {	border: 1px solid pink; }
+.dev8 {	border: 1px solid gray; }
+*/

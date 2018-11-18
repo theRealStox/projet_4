@@ -1,0 +1,110 @@
+:root {
+    --color0 : rgba(36, 36, 36, 1);
+    --color1 : rgba(255, 255, 255, 1);
+    --color2 : rgba(0, 25, 55, 1);
+    --color3 : rgb(12, 82, 167);
+}
+.navMenu {
+    text-align: center;
+    background: var(--color2);
+    color: white;
+    font-family: 'pattaya';
+}
+.navMenu a, .navMenu h1 {
+    color: white;
+    font-family: 'pattaya';
+}
+.navMenu a {
+    font-size: 1.4em;
+}
+.navbar-header a {
+    font-size: 1.7em;
+}
+.navMenu a:hover {
+    color: var(--color3);
+}
+.navMenu h1:hover {
+    color: var(--color3);
+}
+
+
+.menuNotif {
+    font-size: 150%;
+}
+
+
+
+
+
+.navMenuAdmin li div {
+    color: var(--color3);
+    background-color: var(--color1);
+    border: 2px solid var(--color3);
+}
+.navMenuAdmin li div:hover {
+    color: var(--color1);
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+}
+.navMenuAdmin li div svg {
+    font-size: 125%;
+}
+.coreBlock {
+    background-color: var(--color1);
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color1);    
+}
+footer {
+    color: var(--color1);
+    background-color: var(--color3);
+}
+.navbar-toggle {
+    border: 1px solid white;
+    background: white;
+}
+.icon-bar {
+    background: var(--color2);
+}
+
+.divButton a {
+    color: white;
+}
+.divButton svg {
+    font-size:20px;
+}
+#listBillets h3, #listBillets h4, #content__listBillets h3, #content__listBillets h4{
+    text-align: center;
+}
+#listBillets h3, #content__listBillets h3{
+    font-family: 'pattaya';
+    font-size: 175%;
+}
+#listBillets h4, #content__listBillets h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 85%;
+}
+
+.content__showComment__container {
+    margin: 0 0 2% 0;
+}
+.content__showComment__container header {
+    font-size: 14px !important;
+    background-color: inherit !important;
+}
+.content__showComment__container section {
+    background: white;
+}
+.content__showComment__container header p {
+    margin: 2% 0;
+}
+.content__showComment__container section p {
+    margin: 2% 0;
+}
+.content__showComment__container > div > div > div {
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
