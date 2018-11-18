@@ -1,0 +1,87 @@
+<?php
+echo'
+<div class="navMenu">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row alignMenu">
+                        <div class="navbar-header col-lg-4 col-md-4 col-sm-4 dev3">   
+                            <a class="navbar-brand DR JSB AIC dev1" href="index.php">
+                                <div class="containLogo DR JSB AIC dev2">
+                                    <div class="flake__logo dev4">
+                                        <i class="far fa-snowflake"></i>
+                                    </div>
+                                    <div class="train__logo dev5">
+                                        <i class="fas fa-train"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-xs paddingL3"> Billets simple pour l\'Alaska</div>
+                            </a>
+                            <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" style="color:white;">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-6 col-md-6 col-sm-6">
+                            <div class="collapse navbar-collapse row">
+                                <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12">
+                                ';
+                                if (ADMIN_IS_CO === 0) {
+                                    echo'
+                                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        ';
+                                            if (USER_IS_CO === 0) {
+                                                echo'
+                                                <a class="navbar-brand-center" href="index.php?v=u&amp;f=i" >Inscription</a>
+                                                ';
+                                            }
+                                            elseif (USER_IS_CO === 1) {
+                                                echo'
+                                                <a class="navbar-brand-center" href="index.php?v=u&amp;f=mu" >Mon Compte</a>
+                                                ';
+                                            }
+                                            echo'
+                                    </li>
+                                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        ';
+                                            if (USER_IS_CO === 0) {
+                                                echo'
+                                                <a class="navbar-brand-center" href="index.php?v=u&amp;f=c" >Connexion</a>
+                                                ';
+                                            }
+                                            elseif (USER_IS_CO === 1) {
+                                                echo'
+                                                <a class="navbar-brand-center" href="index.php?v=u&amp;f=d" >Déconnexion</a>
+                                                ';
+                                            }
+                                            echo'
+                                    </li>
+                                    ';
+                                }
+                                elseif (ADMIN_IS_CO === 1) {
+                                    echo'
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <a class="navbar-brand-center" href="index.php?v=b&amp;f=a" >Billets</a>
+                                    </li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">                  
+                                        <a class="navbar-brand-center" href="index.php?v=c&amp;f=a" >Commentaires</a>
+                                    </li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <a class="navbar-brand-center" href="index.php?v=u&amp;f=d" >Déconnexion</a>
+                                    </li>
+                                    ';
+                                }
+                                echo'
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> 
+</div>   
+';
