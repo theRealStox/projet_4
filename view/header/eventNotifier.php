@@ -230,6 +230,15 @@ echo'
                 <div class="alert-danger">Erreur modification du Billet </div>
                 ';
             }
+            elseif ($returnNotif === 'billet__ErrorLoadingContent') {
+                echo'
+                <div class="alert-danger">
+                    Une erreur technique est survenue, un ticket a été ouvert.<br />
+                    Vous pouvez rééssayer dans quelques minutes, <br />
+                    toutes nos excuses.
+                </div>
+                ';
+            }
             /*
              ██████╗ ██████╗ ███╗   ███╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗
             ██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
@@ -237,7 +246,6 @@ echo'
             ██║     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
             ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║
              ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
-                                                                                      
             */
             elseif ($returnNotif === 'comment__ErrorLoadingContent') {
                 echo'
@@ -289,6 +297,23 @@ echo'
                 echo'
                 <div class="alert-success">
                     Le Commentaire a bien été refusé.
+                </div>
+                ';
+            }
+            elseif ($returnNotif === 'content__SignalingCommentOK') {
+                echo'
+                <div class="alert-success">
+                    Le Commentaire a bien été signalé.
+                </div>
+                ';
+            }
+            elseif ($returnNotif === 'content__ErrorSignalingComment') {
+                echo'
+                <div class="alert-danger">
+                    Une erreur technique est survenue, un ticket a été ouvert.<br />
+                    "Signalement du commentaire impossible" <br />
+                    Vous pouvez rééssayer dans quelques minutes, <br />
+                    toutes nos excuses.
                 </div>
                 ';
             }

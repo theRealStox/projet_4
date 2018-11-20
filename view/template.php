@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="FR">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,9 +30,7 @@
         
         <?= $content ?>
         
-        <script src="public/JS/script.js"></script>
         <script src="public/JS/jquery.js"></script>
-        <!-- Javascript de Bootstrap -->
         <script src="public/JS/bootstrap.min.js"></script>
         <script src="public/JS/bootstrap-select.js"></script>
         <script src="public/JS/jquery.tinymce.min.js"></script>
