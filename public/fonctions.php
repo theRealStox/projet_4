@@ -40,6 +40,12 @@ function dateFrench($datetime, $type)
 	}
 	return $frenchDay;
 }
+function cutText($text) {
+
+    $cutedText = substr($text, 0, 500);
+    $textReturn = ($cutedText . '...');
+    return $textReturn;
+}
 /*
  █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗
 ██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║
@@ -78,7 +84,7 @@ function errorRegister($page, $desc, $code, $ip, $uniqID, $pseudo, $notifEmail) 
 	$db = dbConnect();
 	try
 	{
-		$rep = $db->prepare('INSERT INTO errorRegister(
+		$rep = $db->prepare('INSERT INTO errorregister(
 		JF_errorRegister_date,
 		JF_errorRegister_page,
 		JF_errorRegister_desc,
