@@ -1,4 +1,5 @@
 <?php
+require('class/Autoload__stack.php');
 
 require('view/header/sessionStart.php');
 
@@ -15,16 +16,14 @@ ob_start();
 	if (!isset($_GET['v']) OR $_GET['v'] === 'a') {
 		
 		$title = 'Accueil';
-		//require('view/body/accueil.php');
-
-		require('controller/content__control.php');
+		require('controller/OO__content__control.php');
 		
 	}
 	if (isset($_GET['v']) AND $_GET['v'] === 'u') {
 		
 		if (isset($_GET['f'])) {
 		
-			require('controller/users__control.php');
+			require('controller/OO__users__control.php');
 		}
 		else {
 			// REDIR 404
@@ -38,7 +37,7 @@ ob_start();
 			if (isset($_GET['f']) AND $_GET['f'] === 'a') {
 				
 				$title = 'Administration Billets';
-				require('controller/billets__control.php');
+                require('controller/OO__billets__control.php');
 			}			
 		}
 		else {
@@ -55,7 +54,7 @@ ob_start();
 			if (isset($_GET['f']) AND $_GET['f'] === 'a') {
 				
 				$title = 'Administration Commentaires';
-				require('controller/comment__control.php');
+				require('controller/OO__comment__control.php');
 			}
 		}
 		else {
@@ -66,7 +65,7 @@ ob_start();
 		}
 	}
 
-$contentBody = ob_get_clean(); // fermeture de la capture
+$contentBody = ob_get_clean();
 
 if (isset($_GET['return']) AND !empty($_GET['return'])) { 
     
@@ -79,6 +78,6 @@ echo $contentBody;
 
 require('view/footer/footer.php');
 
-$content = ob_get_clean(); // fermeture de la capture
+$content = ob_get_clean();
 
 require('view/template.php');
